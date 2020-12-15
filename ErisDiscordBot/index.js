@@ -62,7 +62,7 @@ bot.registerCommand("userstats", (msg) => {
 })
 
 bot.registerCommand("eval", (message) => {
-    if (message.author.id == "386519018577592331")
+    if (message.author.id == "436950036098842645")
     {
         const args = message.content.substring(prefix.length).split(' ');
         const command = args.slice(1).join(' ');
