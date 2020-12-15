@@ -1,6 +1,6 @@
 ### Hello there! I'm Not_H3! 
 
-## I'm a Teenage Developer.
+## I'm a Teenage Developer
 
 - Some info
 - Some info
