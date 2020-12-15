@@ -61,5 +61,23 @@ bot.registerCommand("userstats", (msg) => {
     })
 })
 
+bot.registerCommand("eval", (message) => {
+    if (message.author.id == "386519018577592331")
+    {
+        const args = message.content.substring(prefix.length).split(' ');
+        const command = args.slice(1).join(' ');
+
+        if(!command) return message.channel.send('Specify something to evaluate');
+                    
+        try {
+            const evaled = eval(command);
+                
+            message.channel.send(`\`\`\`js\n${inspect(evaled, { depth: 0 })}\`\`\``);
+        } catch (error) {
+            message.channel.send(`Error`, `${error}`);
+        }
+    }
+})
+
 
 bot.connect();
